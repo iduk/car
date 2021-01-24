@@ -1,7 +1,7 @@
 {
-  "name": "pos-ui",
+  "name": "car",
   "version": "1.0.0",
-  "description": "pos ui front",
+  "description": "Rental Car",
   "private": "true",
   "scripts": {
     "start": "gulp",
