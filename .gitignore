@@ -25,6 +25,7 @@ Icon
 
 # Nuxt generate
 dist
+out
 
 ### react ###
 .DS_*
