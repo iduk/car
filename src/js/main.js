@@ -11,7 +11,7 @@ $(document).ready(function () {
     navigationPosition: 'right',
     slideNavigation: false,
     css3: true,
-    autoScrolling: true,
+    autoScrolling: false,
     scrollHorizontally: false,
     parallax: true,
     parallaxOptions: {

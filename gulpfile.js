@@ -106,15 +106,15 @@ gulp.task('Css', function () {
 /* 
   Image Compress 
 */
-gulp.task('IMG', function () {
+gulp.task('Img', function () {
   return gulp
     .src([`${pathDev.img}**/*`])
-    .pipe(cached('IMG'))
+    .pipe(cached('Img'))
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
         imagemin.mozjpeg({ quality: 75, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 3 }),
+        // imagemin.optipng({ optimizationLevel: 3 }),
       ])
     )
     .pipe(gulp.dest(pathOutput.img))
@@ -170,7 +170,7 @@ gulp.task('clean', function (done) {
 /* 
   BUILD 
 */
-gulp.task('build', gulp.series('Copy', 'IMG', 'Bundle', 'Script', 'Sass', 'Css', 'Include'), function () {
+gulp.task('build', gulp.series('Copy', 'Img', 'Bundle', 'Script', 'Sass', 'Css', 'Include'), function () {
   return gulp.src([`${pathDev.root}**/*`]).pipe(gulp.dest(pathOutput.root))
 })
 
@@ -183,7 +183,7 @@ gulp.task('watchFiles', function () {
     server: pathOutput.root,
     open: true,
   })
-  gulp.watch(`${pathDev.img}**/*`, gulp.series('IMG'))
+  gulp.watch(`${pathDev.img}**/*`, gulp.series('Img'))
   gulp.watch(`${pathDev.js}**/*`, gulp.series('Bundle', 'Script'))
   gulp.watch(`${pathDev.css}**/*`, gulp.series('Sass', 'Css'))
   gulp.watch(`${pathDev.root}*.html`, gulp.series('Include'))

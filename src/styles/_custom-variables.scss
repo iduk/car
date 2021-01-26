@@ -18,7 +18,7 @@ $gray-800: #1b1a2a;
 $gray-900: #161522;
 $black: #000;
 
-$blue: #1057e5;
+$blue: #0c3ea3;
 $indigo: #5724db;
 $purple: #8a1fe0;
 $pink: #e51057;
@@ -56,13 +56,6 @@ $theme-colors: (
   dark: $gray-800,
 );
 
-// Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-
-$enable-transitions: true;
-$enable-rounded: false;
-
 // Body
 //
 // Settings for the `<body>` element.
@@ -73,11 +66,63 @@ $body-bg: #fff;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-size-base: 0.875rem;
+$font-size-base: 1rem;
 
 // Breadcrumbs
 
-// $breadcrumb-bg: #fff;
+$breadcrumb-bg: #fff;
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+
+$gutters: $spacers;
+
+// Container padding
+
+$container-padding-x: $grid-gutter-width / 2;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width: 1px;
+$border-widths: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+);
+
+$border-color: $gray-300;
+
+$border-radius: 0;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.3rem;
+$border-radius-pill: 50rem;
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
 
 // Cards
 

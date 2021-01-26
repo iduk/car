@@ -10,173 +10,273 @@
   <meta name="author" content="iduk">
   <title>렌터카 상담신청</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.0.0-beta1/css/bootstrap-ie11.min.css"
     media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"><!-- css-->
-  <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="styles/main.min.css">
   <link rel="stylesheet" href="styles/lib/jquery.fullPage.css">
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.min.css">
 
   <script src="js/lib/bootstrap.bundle.min.js"></script>
-  
+
 </head>
 
 <body>
   @@include('layout/header.html')
 
   <!-- Content -->
-  <main>
-    <div id="fullpage">
-      <!-- Home -->
-      <section class="section intro-section">
-        
+
+  <div id="fullpage">
+    <!-- Home -->
+    <section class="section">
+      <main class="intro-section">
+        <!-- IMG -->
+        <div class="car-group">
+          <img src="images/hyundai_PNG11222.png" class="car-img" style="margin-bottom: -10%;" alt="">
+          <img src="images/kia_PNG70.png" class="car-img" style="margin-bottom: 5rem;" alt="">
+        </div>
+
         <div class="brand container justify-content-center">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="logo" class="img-fluid" width="180" />
           </a>
         </div>
-      
-        
-        <div class="container-fluid">
+        <!-- Headline -->
+        <div class="headline container">
           <div class="row justify-content-center">
-            <div class="col-lg-12 col-9 text-center">
-              <h1 class="display-1">
-                신용점수 상관없이 누구나 가능
+            <div class="col-lg-12 col-10">
+              <h1 class="display-2">
+                신용점수 상관없이<br />
+                누구나 가능
               </h1>
-              <div class="d-flex justify-content-center mt-4 mx-auto">
-                <h4 class="" style="width:150px">신차 장기렌트</h4>
-                <h4 class="" style="width:150px">중고차 렌트</h4>
-
+              <!-- subtext -->
+              <div class="mt-4">
+                <p class="h4"><span class="d-inline-block mr-1"><i data-feather="check"></i></span>신차 장기 렌트</p>
+                <p class="h4"><span class="d-inline-block mr-1"><i data-feather="check"></i></span>중고차 렌트</p>
               </div>
-  
             </div>
           </div>
         </div>
-      </section>
+      </main>
+    </section>
 
-      <!-- about -->
-      <section class="section bg-dark text-white">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            
-            <div class="col-lg-10 col-10 col-md-6  mr-lg-auto mx-md-auto">
-  
-              <!-- Heading -->
-              <h1 class="display-3">
-                당사 자체 심사만으로 렌트 가능<br />
-                금융사 심사없이 렌트 가능
-              </h1>
-  
-              <!-- Text -->
-              <div class="mt-5">
-                <p class="font-size-lg text-gray-700">
-                  신용점수 때문에 렌트가 어려우셨나요?
-                </p>
-                <p class="font-size-lg text-gray-700">
-                  당사는 금융사 심사없이 자체심사 진행 후 렌트를 진행해 드립니다
-                </p>
+    <!-- about -->
+    <section class="section bg-dark text-white">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+
+          <!-- Heading -->
+          <div class="col-lg-10 col-10 col-md-6  mr-lg-auto mx-auto">
+            <h1 class="display-3 mb-4">
+              당사 자체 심사만으로 금융사 심사없이<br />
+              렌트 가능
+            </h1>
+            <!-- Text -->
+            <p class="lead">신용점수 때문에 렌트가 어려우셨나요?</p>
+            <p class="mt-2">당사는 금융사 심사없이 자체심사 진행 후 렌트를 진행해드립니다</p>
+          </div>
+
+          <!-- <div class="col-lg-10 col-10 col-md-6  ml-lg-auto mx-md-auto">
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- items -->
+    <section class="section">
+      <div class="container">
+
+        <div class="row">
+          <ul class="col-xl-4 col-lg-4 col-md-6 list-unstyled">
+            <li>
+              <div class="service-icon mb-30">
+                <i data-feather="coffee"></i>
+              </div>
+              <h4>타이틀이 나간다 두두두둥</h4>
+              <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
+            </li>
+            <li>
+              <div class="service-icon mb-30">
+                <i data-feather="coffee"></i>
+              </div>
+              <h4>타이틀이 나간다 두두두둥</h4>
+              <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
+            </li>
+            <li>
+              <div class="service-icon mb-30">
+                <i data-feather="coffee"></i>
+              </div>
+              <h4>타이틀이 나간다 두두두둥</h4>
+              <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
+            </li>
+            <li>
+              <div class="service-icon mb-30">
+                <i data-feather="coffee"></i>
+              </div>
+              <h4>타이틀이 나간다 두두두둥</h4>
+              <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
+            </li>
+            <li>
+              <div class="service-icon mb-30">
+                <i data-feather="coffee"></i>
+              </div>
+              <h4>타이틀이 나간다 두두두둥</h4>
+              <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
+            </li>
+            <li>
+              <div class="service-icon mb-30">
+                <i data-feather="coffee"></i>
+              </div>
+              <h4>타이틀이 나간다 두두두둥</h4>
+              <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
+            </li>
+          </ul>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section">
+      <div class="container">
+        <form method="POST">
+          <div class="row align-items-center justify-content-center">
+            <article class="col-lg-7 col-10 max-auto">
+              <h2 class="display-3 mb-20">상담신청</h2>
+              <p>상담 시 블라블라</p>
+              <div class="my-3 bg-light">
+                <div class="mb-3">
+                  <h5>개인(신용)정보 수집 이용 동의서</h5>
+                  <ul>
+                    <li>1. 개인정보 수집및 이용 목적<br>신차 구입(할부/장기렌트/리스/중고차장기렌트/자동차보험) 상품 관련 상담 및 계약진행</li>
+                    <li>2. 수집하는 개인정보 항목<br>이름, 연락처, 지역, 구매희망시기, 제조사, 모델명, 세부모델, 옵션, 구입선택, 초기자금, 계약기간, 보험연령</li>
+                    <li>3. 보유및 이용기간<br>최종 상담일로 3개월후 파기</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5>개인정보 제3자 제공및 위탁 이용 동의서</h5>
+                  <ul>
+                    <li>1. 개인(신용)정보를 제공 받는 자<br>주식회사 스윗코 제휴업체</li>
+                    <li>2. 개인정보 수집및 이용 목적<br>신차 구입(할부/장기렌트/리스/중고차장기렌트/자동차보험) 상품 관련 상담 및 계약진행</li>
+                    <li>3. 수집하는 개인정보 항목<br>이름, 연락처, 지역, 구매희망시기, 제조사, 모델명, 세부모델, 옵션, 구입선택, 초기자금, 계약기간, 보험연령</li>
+                    <li>4. 보유및 이용기간<br>최종 상담일로 3개월후 파기</li>
+                  </ul>
+                  <p class="text-danger">※ 귀하의 수집,이용 동의를 거부할 권리가 있으나, 동의하지 않으실 경우 상담이 불가능 할 수 있음을 알려 드립니다.</p>
+                </div>
 
               </div>
-  
-            </div>
-          </div>
-        </div>
-      </section>
+              <hr class="my-4">
 
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing
+                  address</label>
+              </div>
 
-      <!-- items -->
-      <section class="section">
-        <div class="container">
-          
-          <div class="row">
-            <ul class="col-xl-4 col-lg-4 col-md-6 list-unstyled">
-              <li>
-                <div class="service-icon mb-30">
-                  <i data-feather="coffee"></i>
-                </div>
-                <h4>타이틀이 나간다 두두두둥</h4>
-                <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
-              </li>
-              <li>
-                <div class="service-icon mb-30">
-                  <i data-feather="coffee"></i>
-                </div>
-                <h4>타이틀이 나간다 두두두둥</h4>
-                <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
-              </li>
-              <li>
-                <div class="service-icon mb-30">
-                  <i data-feather="coffee"></i>
-                </div>
-                <h4>타이틀이 나간다 두두두둥</h4>
-                <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
-              </li>
-              <li>
-                <div class="service-icon mb-30">
-                  <i data-feather="coffee"></i>
-                </div>
-                <h4>타이틀이 나간다 두두두둥</h4>
-                <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
-              </li>
-              <li>
-                <div class="service-icon mb-30">
-                  <i data-feather="coffee"></i>
-                </div>
-                <h4>타이틀이 나간다 두두두둥</h4>
-                <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
-              </li>
-              <li>
-                <div class="service-icon mb-30">
-                  <i data-feather="coffee"></i>
-                </div>
-                <h4>타이틀이 나간다 두두두둥</h4>
-                <p>내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 내용들 </p>
-              </li>
-            </ul>
-            
-        </div>
-      </section>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
 
-      <!-- Contact -->
-      <section class="section contact-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <div class="contact-wrapper mb-30">
-                <h2 class="display-3 mb-20 wow fadeInDown" data-wow-delay=".2s">상담신청</h2>
-                <p class="mb-55 wow fadeInUp" data-wow-delay=".4s">상담 시 블라블라</p>
-                <div class="my-5 bg-light">
-                  개인정보이용 동의 내용
+              <hr class="my-4">
+            </article>
+
+            <article class="col-lg-7 col-10 max-auto">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
                 </div>
-                <form action="mail.php" method="POST" id="contact-form" class="contact-form">
-                  <div class="row">
-                    <div class="col-12">
-                      <input type="text" id="name" name="name" placeholder="성함">
-                    </div>
-                    <div class="col-12">
-                      <input type="email" id="email" name="email" placeholder="이메일 주소">
-                    </div>
-                    <div class="col-12">
-                      <input type="text" id="phone" name="phone" placeholder="휴대전화">
-                    </div>
-                    <div class="col-12">
-                      <textarea name="message" id="message" rows="5" placeholder="상담 내용"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn-outline-primary btn-lg btn-block">신청 완료</button>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <div class="invalid-feedback">
+                      Your username is required.
                     </div>
                   </div>
-                </form>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
               </div>
-            </div>
+
+
+
+              <hr class="my-4">
+
+              <button class="btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
+      </div>
+      </form>
+  </div>
+  </section>
+  </div>
+
 
   @@include('layout/footer.html')
 </body>
