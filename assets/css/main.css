@@ -10574,7 +10574,7 @@ header.topnav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .section main {
@@ -10608,7 +10608,7 @@ main.intro .headline {
 }
 @media (max-width: 800px) {
   main.intro .headline {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 }
 main.intro .img-group {
@@ -10832,6 +10832,15 @@ main.contact .form-label {
 }
 main.contact label.font-check-label {
   color: #161522 !important;
+}
+
+footer {
+  padding: 1rem;
+}
+footer .footer-copyright {
+  padding: 2rem 1.5rem;
+  border-radius: 0.4rem;
+  background-color: #f2f2f3;
 }
 
 /*# sourceMappingURL=main.css.map */

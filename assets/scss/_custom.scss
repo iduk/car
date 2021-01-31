@@ -67,7 +67,7 @@ header.topnav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .section main {
@@ -102,7 +102,7 @@ main.intro {
     padding: 8rem 0;
     overflow: hidden;
     @media (max-width: 800px) {
-      padding: 5rem 0;
+      padding: 3rem 0;
     }
   }
 
@@ -349,5 +349,15 @@ main.contact {
   }
   label.font-check-label {
     color: $dark !important;
+  }
+}
+
+footer {
+  padding: 1rem;
+
+  .footer-copyright {
+    padding: 2rem 1.5rem;
+    border-radius: 0.4rem;
+    background-color: $light;
   }
 }
