@@ -1,48 +1,31 @@
 {
-  "name": "car",
+  "name": "public_html",
   "version": "1.0.0",
-  "description": "Rental Car",
-  "private": "true",
-  "scripts": {
-    "start": "gulp",
-    "dev": "gulp build"
-  },
-  "author": "iduk",
+  "main": "index.js",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iduk/car.git"
-  },
   "dependencies": {
-    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "autoprefixer": "^9.8.5",
-    "browser-sync": "^2.26.3",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-cached": "^1.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-copy": "^4.0.1",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-file-include": "^2.3.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "vercel": "^19.2.0"
+    "aos": "^2.3.4",
+    "babel-polyfill": "^6.26.0",
+    "jquery": "^3.5.1",
+    "lib": "^4.3.2",
+    "postcss-fail-on-warn": "^0.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^4.2.0",
+    "postcss-scss": "^3.0.4",
+    "posthtml-img-autosize": "^0.1.6",
+    "sass": "^1.32.5"
   },
   "devDependencies": {
-    "@popperjs/core": "^2.5.4",
-    "@prettier/plugin-pug": "^1.5.0",
-    "bootstrap": "5.0.0-beta1",
-    "bootstrap-ie11": "^5.0.0-beta1",
-    "feather-icons": "^4.28.0",
-    "jquery": "^3.5.1",
-    "prettier": "^2.0.5"
+    "@babel/core": "^7.12.10",
+    "autoprefixer": "^10.2.4",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.4",
+    "postcss-modules": "^4.0.0"
+  },
+  "scripts": {
+    "start": "parcel ./index.html",
+    "sass": "sass --watch assets/scss/main.scss:assets/css/main.css --style expanded",
+    "build-css": "postcss -c postcss.config.json -o assets/css/main.css assets/css/main.css"
   }
 }
